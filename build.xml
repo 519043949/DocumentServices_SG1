@@ -1,6 +1,6 @@
 <project name="MyProject" default="buildear" basedir=".">
  <property name="ear.dir" value="D:\Jenkins\EAR"/>
- <property name="Remote.App.path" value="C:\jenkins\workspace\DocumentServices_SG"/>
+ <property name="Remote.App.path" value="C:\jenkins\workspace\DocumentServices_SG1"/>
    <property name="tibco.tra.home" value="C:\tibco5\tra\5.8\bin"/>
    <target name="Clean" description="Delete EAR directory in the CI Windows server and create a new empty one ">
 <delete dir="${ear.dir}" failonerror="false"/>

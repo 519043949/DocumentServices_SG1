@@ -10,7 +10,7 @@
    <exec executable="buildear.exe" dir="${tibco.tra.home}" resolveexecutable="true">
       <arg line="-x"/>
       <arg value="-v"/>
-	  <arg line="-ear /Deployment/DocumentServices_SG1"/>
+	  <arg line="-ear /Deployment/DocumentServices_SG1.archive"/>
       <arg line="-o ${ear.dir}\DocumentServices_SG1.ear"/>
       <arg line="-p ${Remote.App.path}"/>
    </exec>

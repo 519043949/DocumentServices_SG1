@@ -6,7 +6,7 @@
 <delete dir="${ear.dir}" failonerror="false"/>
 <mkdir dir="${ear.dir}"/>
 </target>
-<target name="buildear" dependencies="Clean">
+<target name="buildear" depends="Clean">
    <exec executable="buildear.exe" dir="${tibco.tra.home}" resolveexecutable="true">
       <arg line="-x"/>
       <arg value="-v"/>

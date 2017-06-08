@@ -1,8 +1,8 @@
-<project name="MyProject" default="buildear" basedir=".">
+<project name="MyProject" default="Clean" basedir=".">
  <property name="ear.dir" value="D:\Jenkins\EAR"/>
  <property name="Remote.App.path" value="C:\jenkins\workspace\DocumentServices_SG"/>
    <property name="tibco.tra.home" value="C:\tibco5\tra\5.8\bin"/>
-<target name="buildear">
+<target name="buildear" depends="Clean">
    <exec executable="buildear.exe" dir="${tibco.tra.home}" resolveexecutable="true">
       <arg line="-x"/>
       <arg value="-v"/>

@@ -5,6 +5,7 @@
    <target name="Clean" description="Delete EAR directory in the CI Windows server and create a new empty one ">
 <delete dir="${ear.dir}" failonerror="false"/>
 <mkdir dir="${ear.dir}"/>
+</target>
 <target name="buildear" depends="Clean">
    <exec executable="buildear.exe" dir="${tibco.tra.home}" resolveexecutable="true">
       <arg line="-x"/>
@@ -13,7 +14,6 @@
       <arg line="-o ${ear.dir}\DocumentServices_SG1.ear"/>
       <arg line="-p ${Remote.App.path}"/>
    </exec>
-</target>
 
 </target>
 </project>
